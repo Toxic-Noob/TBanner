@@ -1,4 +1,4 @@
-#Termux Banner and Termux Security Tool
+# Termux Banner and Termux Security Tool
 
 apt update
 
