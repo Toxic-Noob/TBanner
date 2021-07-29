@@ -11,6 +11,10 @@ def psb(z):
         sys.stdout.flush()
         time.sleep(0.03)
 
+#Var
+Sec = ("python .Sec.py")
+Ban = ("lolcat .banner.txt")
+
 print("\033[92m")
 os.system("clear")
 time.sleep(0.8)
@@ -41,8 +45,10 @@ print("\n")
 if(op=="1"):
 	psb("[*] Please Wait....")
 	os.system("rm /data/data/com.termux/files/home/.bashrc")
-	os.system("rm /data/data/com.termux/files/home/.hushlogin")
 	os.system("rm /data/data/com.termux/files/home/.Sec.py")
+	Bann = open("/data/data/com.termux/files/home/.bashrc", "w")
+	Bann.write(Ban)
+	Bann.close()
 	time.sleep(1)
 	psb("\n[*] Successfully Uninstalled Security From Termux...")
 	time.sleep(1)
@@ -52,8 +58,10 @@ if(op=="1"):
 elif(op=="2"):
 	psb("[*] Please Wait....")
 	os.system("rm /data/data/com.termux/files/home/.bashrc")
-	os.system("rm /data/data/com.termux/files/home/.hushlogin")
 	os.system("rm /data/data/com.termux/files/home/.banner.txt")
+	Secu = open("/data/data/com.termux/files/home/.bashrc", "w")
+	Secu.write(Sec)
+	Secu.close()
 	time.sleep(1)
 	psb("\n[*] Successfully Uninstalled Banner From Termux...")
 	time.sleep(1)
